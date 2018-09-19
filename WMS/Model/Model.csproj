@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2EBC176-E8C1-4DD7-B1CD-81971A25C196}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\CIT.MES\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HouseLight.cs" />
+    <Compile Include="mdcdatbarcodetemplet.cs" />
+    <Compile Include="MdcDatFeederManage.cs" />
+    <Compile Include="MdcdatMaterial.cs" />
+    <Compile Include="MdcDatOrgUserMap.cs" />
+    <Compile Include="MdcdatProduct.cs" />
+    <Compile Include="MdcdatProductDetail.cs" />
+    <Compile Include="MdcDatProductLine.cs" />
+    <Compile Include="MdcDatSuppliesManage.cs" />
+    <Compile Include="MdcDatUPH.cs" />
+    <Compile Include="MdcDatVStorage.cs" />
+    <Compile Include="Model_Bllb_groupStatistics_tbgs.cs" />
+    <Compile Include="Model_Bllb_Group_tbg.cs" />
+    <Compile Include="Model_Bllb_keyType_tbkt.cs" />
+    <Compile Include="Model_Bllb_productError_tbpe.cs" />
+    <Compile Include="Model_Bllb_productInfo_tbpi.cs" />
+    <Compile Include="Model_Bllb_productKey_tbpk.cs" />
+    <Compile Include="Model_Bllb_productPass_tbpp.cs" />
+    <Compile Include="Model_Bllb_productStatus_tbps.cs" />
+    <Compile Include="Model_Bllb_sampleCode_tbsc.cs" />
+    <Compile Include="Model_Bllb_SampleDoc_tbsd.cs" />
+    <Compile Include="Model_Bllb_sampleProduct_tbap.cs" />
+    <Compile Include="Model_Bllb_sampleQty_tbsq.cs" />
+    <Compile Include="Model_Bllb_spotCheckAcRe_tbscar.cs" />
+    <Compile Include="Model_Bllb_spotCheckQty_tbscq.cs" />
+    <Compile Include="Model_Bllb_station_tbs.cs" />
+    <Compile Include="Model_Bllb_techGroupKey_tbtgk.cs" />
+    <Compile Include="Model_Bllb_TechGroupMaterial_tbtgm.cs" />
+    <Compile Include="Model_Bllb_techGroupRelation_tbtgr.cs" />
+    <Compile Include="Model_Bllb_techGroupStation_tbtgs.cs" />
+    <Compile Include="Model_Bllb_technologyGroup_tbtg.cs" />
+    <Compile Include="Model_Bllb_technology_tbt.cs" />
+    <Compile Include="Model_Bllb_wocodeBom_tbwb.cs" />
+    <Compile Include="Model_CommBar.cs" />
+    <Compile Include="Model_MaterialBarCode.cs" />
+    <Compile Include="Model_PackageInfo.cs" />
+    <Compile Include="Model_Bllb_BomMainInfo_tbmbi.cs" />
+    <Compile Include="Model_Bllb_BomDetailInfo_tbbdi.cs" />
+    <Compile Include="Model_Usecontext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PUB_UniqueCodeInLine.cs" />
+    <Compile Include="PVS_Base_Line.cs" />
+    <Compile Include="PVS_Busi_LoadingList.cs" />
+    <Compile Include="SfcDatProduct.cs" />
+    <Compile Include="SfcDatProductProRouteLog.cs" />
+    <Compile Include="SysdatMPNCustomer.cs" />
+    <Compile Include="SysdatOrg.cs" />
+    <Compile Include="SysDatUser.cs" />
+    <Compile Include="ToolStock.cs" />
+    <Compile Include="T_Bllb_acceptOnDeviation_tbaod.cs" />
+    <Compile Include="T_Bllb_barcodeCreate_tbcb.cs" />
+    <Compile Include="T_Bllb_barcodeProduct_tbbp.cs" />
+    <Compile Include="T_Bllb_BarcodeRule_tbbr.cs" />
+    <Compile Include="T_Bllb_BaseBom_tbbb.cs" />
+    <Compile Include="T_Bllb_checkItemType_tbcit.cs" />
+    <Compile Include="T_Bllb_checkItem_tbci.cs" />
+    <Compile Include="T_Bllb_checkLevel_tbcl.cs" />
+    <Compile Include="T_Bllb_checkType_tbct.cs" />
+    <Compile Include="T_Bllb_ConMaterial_tbcm.cs" />
+    <Compile Include="T_Bllb_DocType_tbdt.cs" />
+    <Compile Include="T_Bllb_errorCode_tbec.cs" />
+    <Compile Include="T_Bllb_errorFactor_tbef.cs" />
+    <Compile Include="T_Bllb_errorParts_tbep.cs" />
+    <Compile Include="T_Bllb_errorReason_tber.cs" />
+    <Compile Include="T_Bllb_errorScores _tbes.cs" />
+    <Compile Include="T_Bllb_errorType_tbet.cs" />
+    <Compile Include="T_Bllb_facCalendar_tbfc.cs" />
+    <Compile Include="T_Bllb_facCalRest_tbfcr.cs" />
+    <Compile Include="T_Bllb_facCalWork_tbfcw.cs" />
+    <Compile Include="T_Bllb_Feeder_Maintain_tbfm.cs" />
+    <Compile Include="T_Bllb_Feeder_Repair_tbfr.cs" />
+    <Compile Include="T_Bllb_groupStatistics_tbgs.cs" />
+    <Compile Include="T_Bllb_group_tbg.cs" />
+    <Compile Include="T_Bllb_inOutLog_tbiol.cs" />
+    <Compile Include="T_Bllb_keyMaterial_tbkm.cs" />
+    <Compile Include="T_Bllb_keyType_tbkt.cs" />
+    <Compile Include="T_Bllb_LabelSource_tbls.cs" />
+    <Compile Include="T_Bllb_LocationContainer_tblc.cs" />
+    <Compile Include="T_Bllb_MaterialContainer_tbmc.cs" />
+    <Compile Include="T_Bllb_MaterialLog_tbml.cs" />
+    <Compile Include="T_Bllb_MaterialRelation_Tbmr.cs" />
+    <Compile Include="T_Bllb_MaterialReplace_tbmr.cs" />
+    <Compile Include="T_Bllb_materialRule_tbmb.cs" />
+    <Compile Include="T_Bllb_materialUsed_tbmu.cs" />
+    <Compile Include="T_Bllb_modelSample_tbms.cs" />
+    <Compile Include="T_Bllb_packageOne_tbpo.cs" />
+    <Compile Include="T_Bllb_packageTwo_tbpt.cs" />
+    <Compile Include="T_Bllb_PODetail_tbpd.cs" />
+    <Compile Include="T_Bllb_POMain_tbpm.cs" />
+    <Compile Include="T_Bllb_PrintLog_tbpl.cs" />
+    <Compile Include="T_Bllb_ProductCode_tbpc.cs" />
+    <Compile Include="T_Bllb_productError_tbpe.cs" />
+    <Compile Include="T_Bllb_productInfo_tbpi.cs" />
+    <Compile Include="T_Bllb_productKey_tbpk.cs" />
+    <Compile Include="T_Bllb_productPass_tbpp.cs" />
+    <Compile Include="T_Bllb_ProductPrintInfo_tbpp.cs" />
+    <Compile Include="T_Bllb_productStatus_tbps.cs" />
+    <Compile Include="T_Bllb_projectRule_tbpr.cs" />
+    <Compile Include="T_Bllb_repairMethod_tbrm.cs" />
+    <Compile Include="T_Bllb_replaceKeyLog_tbrkl.cs" />
+    <Compile Include="T_Bllb_reworkInfo_tbri.cs" />
+    <Compile Include="T_Bllb_sampleAql_tbsa.cs" />
+    <Compile Include="T_Bllb_IQCCheckItem_tbici.cs" />
+    <Compile Include="T_Bllb_sampleCheckItem_tbsci.cs" />
+    <Compile Include="T_Bllb_IQCDoc_tbid.cs" />
+    <Compile Include="T_Bllb_SampleDoc_tbsd.cs" />
+    <Compile Include="T_Bllb_IQCProduct_tbip.cs" />
+    <Compile Include="T_Bllb_sampleProduct_tbap.cs" />
+    <Compile Include="T_Bllb_sampleQty_tbsq.cs" />
+    <Compile Include="T_Bllb_sampleTestLevel_tbstt.cs" />
+    <Compile Include="T_Bllb_scrap_tbs.cs" />
+    <Compile Include="T_Bllb_SecondClass_tbsc.cs" />
+    <Compile Include="T_Bllb_SpecMaterialRule_tbsmr.cs" />
+    <Compile Include="T_Bllb_station_tbs.cs" />
+    <Compile Include="T_Bllb_Step_tbs.cs" />
+    <Compile Include="T_Bllb_StockInfo_tbsi.cs" />
+    <Compile Include="T_Bllb_StorageArea_tbsa.cs" />
+    <Compile Include="T_Bllb_StorageDocDetail_tbsdd.cs" />
+    <Compile Include="T_Bllb_StorageDocMaterial_tsdm.cs" />
+    <Compile Include="T_Bllb_StorageDoc_tbsd.cs" />
+    <Compile Include="T_Bllb_StorageLocation_tbsl.cs" />
+    <Compile Include="T_Bllb_Storage_tbs.cs" />
+    <Compile Include="T_Bllb_technologyGroup_tbtg.cs" />
+    <Compile Include="T_Bllb_TempletSource_tbts.cs" />
+    <Compile Include="T_InventoryCodeCollect_ticc.cs" />
+    <Compile Include="T_InventoryDetail_tid.cs" />
+    <Compile Include="T_Inventory_Detail.cs" />
+    <Compile Include="T_Inventory_ti.cs" />
+    <Compile Include="T_Product_Type.cs" />
+    <Compile Include="t_smt_tin.cs" />
+    <Compile Include="t_smt_tin_online.cs" />
+    <Compile Include="T_Steel_Drawknife_Checkout.cs" />
+    <Compile Include="T_Steel_Drawknife_Exchange.cs" />
+    <Compile Include="T_Steel_Drawknife_Maintain_tsdm.cs" />
+    <Compile Include="T_Steel_Drawknife_Manage.cs" />
+    <Compile Include="T_Steel_Drawknife_Number.cs" />
+    <Compile Include="T_Steel_Drawknife_Product.cs" />
+    <Compile Include="T_Steel_Drawknife_Retrospect.cs" />
+    <Compile Include="T_Steel_Drawknife_Sheet.cs" />
+    <Compile Include="T_Steel_Drawknife_Stock.cs" />
+    <Compile Include="T_Steel_Drawknife_Type.cs" />
+    <Compile Include="T_Sysc_dictionaryType_tsdt.cs" />
+    <Compile Include="T_Sysc_dictionary_tsd.cs" />
+    <Compile Include="T_Work_Number.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CIT.MES\CIT.MES.csproj">
+      <Project>{cf585bde-21f8-484b-bec0-5f44a30d1956}</Project>
+      <Name>CIT.MES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

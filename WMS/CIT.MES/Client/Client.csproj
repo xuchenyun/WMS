@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A34252F-3594-467F-88A2-B519138DD98F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BSE.Windows.Forms\DisplayInformation.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\FlagsSetWindowPos.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\GetWindowLongIndex.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\HitTest.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\HookType.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\Msgs.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\ScrollBars.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\ShowWindowStyles.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\WindowExStyles.cs" />
+    <Compile Include="CIT.Client.Docking.Win32\WindowStyles.cs" />
+    <Compile Include="CIT.Client.Docking\AutoHideStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\AutoHideStripConverter.cs" />
+    <Compile Include="CIT.Client.Docking\AutoHideStripSkin.cs" />
+    <Compile Include="CIT.Client.Docking\DeserializeDockContent.cs" />
+    <Compile Include="CIT.Client.Docking\DockAlignment.cs" />
+    <Compile Include="CIT.Client.Docking\DockAreas.cs" />
+    <Compile Include="CIT.Client.Docking\DockAreasEditor.cs" />
+    <Compile Include="CIT.Client.Docking\DockContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\DockContentCollection.cs" />
+    <Compile Include="CIT.Client.Docking\DockContentEventArgs.cs" />
+    <Compile Include="CIT.Client.Docking\DockContentHandler.cs" />
+    <Compile Include="CIT.Client.Docking\DockHelper.cs" />
+    <Compile Include="CIT.Client.Docking\DockOutlineBase.cs" />
+    <Compile Include="CIT.Client.Docking\DockPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\DockPaneCaptionBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\DockPaneCollection.cs" />
+    <Compile Include="CIT.Client.Docking\DockPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\DockPanelExtender.cs" />
+    <Compile Include="CIT.Client.Docking\DockPanelGradient.cs" />
+    <Compile Include="CIT.Client.Docking\DockPanelGradientConverter.cs" />
+    <Compile Include="CIT.Client.Docking\DockPanelSkin.cs" />
+    <Compile Include="CIT.Client.Docking\DockPanelSkinConverter.cs" />
+    <Compile Include="CIT.Client.Docking\DockPaneStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\DockPaneStripConverter.cs" />
+    <Compile Include="CIT.Client.Docking\DockPaneStripGradient.cs" />
+    <Compile Include="CIT.Client.Docking\DockPaneStripGradientConverter.cs" />
+    <Compile Include="CIT.Client.Docking\DockPaneStripSkin.cs" />
+    <Compile Include="CIT.Client.Docking\DockPaneStripToolWindowGradient.cs" />
+    <Compile Include="CIT.Client.Docking\DockPaneTabGradientConverter.cs" />
+    <Compile Include="CIT.Client.Docking\DockState.cs" />
+    <Compile Include="CIT.Client.Docking\DockWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\DockWindowCollection.cs" />
+    <Compile Include="CIT.Client.Docking\DocumentStyle.cs" />
+    <Compile Include="CIT.Client.Docking\DocumentTabStripLocation.cs" />
+    <Compile Include="CIT.Client.Docking\DragForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\DrawHelper.cs" />
+    <Compile Include="CIT.Client.Docking\DummyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\FloatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\FloatWindowCollection.cs" />
+    <Compile Include="CIT.Client.Docking\GetPersistStringCallback.cs" />
+    <Compile Include="CIT.Client.Docking\IContentFocusManager.cs" />
+    <Compile Include="CIT.Client.Docking\IDockContent.cs" />
+    <Compile Include="CIT.Client.Docking\IDockDragSource.cs" />
+    <Compile Include="CIT.Client.Docking\IDragSource.cs" />
+    <Compile Include="CIT.Client.Docking\InertButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\INestedPanesContainer.cs" />
+    <Compile Include="CIT.Client.Docking\ISplitterDragSource.cs" />
+    <Compile Include="CIT.Client.Docking\LocalizedCategoryAttribute.cs" />
+    <Compile Include="CIT.Client.Docking\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="CIT.Client.Docking\MeasurePane.cs" />
+    <Compile Include="CIT.Client.Docking\Measures.cs" />
+    <Compile Include="CIT.Client.Docking\NativeMethods.cs" />
+    <Compile Include="CIT.Client.Docking\NestedDockingStatus.cs" />
+    <Compile Include="CIT.Client.Docking\NestedPaneCollection.cs" />
+    <Compile Include="CIT.Client.Docking\ResourceHelper.cs" />
+    <Compile Include="CIT.Client.Docking\Resources.cs" />
+    <Compile Include="CIT.Client.Docking\SplitterBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\Strings.cs" />
+    <Compile Include="CIT.Client.Docking\TabGradient.cs" />
+    <Compile Include="CIT.Client.Docking\VisibleNestedPaneCollection.cs" />
+    <Compile Include="CIT.Client.Docking\VS2005AutoHideStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\VS2005DockPaneCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\VS2005DockPaneStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.Docking\Win32Helper.cs" />
+    <Compile Include="CIT.Client.Properties\Resources.cs" />
+    <Compile Include="CIT.Client.ToolScript\ucBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIT.Client.ToolScript\ucBaseCore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\AnimateWindowFlag.cs" />
+    <Compile Include="CIT.Client\ArrowDirection.cs" />
+    <Compile Include="CIT.Client\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\BseColorTable.cs" />
+    <Compile Include="CIT.Client\BseRenderer.cs" />
+    <Compile Include="CIT.Client\BtnEventArgs.cs" />
+    <Compile Include="CIT.Client\CaptionStyle.cs" />
+    <Compile Include="CIT.Client\CheckBoxesTypes.cs" />
+    <Compile Include="CIT.Client\CheckBoxProperties.cs" />
+    <Compile Include="CIT.Client\CheckDirection.cs" />
+    <Compile Include="CIT.Client\ColorScheme.cs" />
+    <Compile Include="CIT.Client\ColorSchemeChangeEventArgs.cs" />
+    <Compile Include="CIT.Client\ColorTableBlack.cs" />
+    <Compile Include="CIT.Client\ColorTableBlue.cs" />
+    <Compile Include="CIT.Client\ComboBoxButtonState.cs" />
+    <Compile Include="CIT.Client\ComboBoxInfo.cs" />
+    <Compile Include="CIT.Client\ComboBoxItem.cs" />
+    <Compile Include="CIT.Client\Constants.cs" />
+    <Compile Include="CIT.Client\ControlHelper.cs" />
+    <Compile Include="CIT.Client\CornerRadius.cs" />
+    <Compile Include="CIT.Client\CustomColors.cs" />
+    <Compile Include="CIT.Client\CustomEdit.cs" />
+    <Compile Include="CIT.Client\CustomPanelColors.cs" />
+    <Compile Include="CIT.Client\CustomXPanderPanelColors.cs" />
+    <Compile Include="CIT.Client\EditItemInformations.cs" />
+    <Compile Include="CIT.Client\EnumBorderStyle.cs" />
+    <Compile Include="CIT.Client\EnumControlState.cs" />
+    <Compile Include="CIT.Client\EnumControlStyelMode.cs" />
+    <Compile Include="CIT.Client\EnumMessageBox.cs" />
+    <Compile Include="CIT.Client\EnumPageSize.cs" />
+    <Compile Include="CIT.Client\EnumShowWindowMode.cs" />
+    <Compile Include="CIT.Client\EnumTabStyle.cs" />
+    <Compile Include="CIT.Client\EnumTheme.cs" />
+    <Compile Include="CIT.Client\FormControlBoxRender.cs" />
+    <Compile Include="CIT.Client\frmSkinManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\GDIHelper.cs" />
+    <Compile Include="CIT.Client\GradientColor.cs" />
+    <Compile Include="CIT.Client\HDITEM.cs" />
+    <Compile Include="CIT.Client\HeaderControlMessages.cs" />
+    <Compile Include="CIT.Client\HeaderItemFlags.cs" />
+    <Compile Include="CIT.Client\HoverState.cs" />
+    <Compile Include="CIT.Client\HoverStateChangeEventArgs.cs" />
+    <Compile Include="CIT.Client\IMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\IMainFrmNoBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\IniConfig.cs" />
+    <Compile Include="CIT.Client\IPanel.cs" />
+    <Compile Include="CIT.Client\ITreeListViewItemComparer.cs" />
+    <Compile Include="CIT.Client\KeyStatesMasks.cs" />
+    <Compile Include="CIT.Client\LinearColor.cs" />
+    <Compile Include="CIT.Client\ListViewMessages.cs" />
+    <Compile Include="CIT.Client\Loading.cs" />
+    <Compile Include="CIT.Client\LoadResource.cs" />
+    <Compile Include="CIT.Client\LVHITTESTINFO.cs" />
+    <Compile Include="CIT.Client\MINMAXINFO.cs" />
+    <Compile Include="CIT.Client\MsgBox.cs" />
+    <Compile Include="CIT.Client\MultiselectComboBox.cs" />
+    <Compile Include="CIT.Client\MultiselectComboBoxItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\MultiselectComboBoxItemList.cs" />
+    <Compile Include="CIT.Client\MultiselectComboBoxListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\MultiselectComboBoxListControlContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\MyMsgFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\MyOpaqueLayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\NCCALCSIZE_PARAMS.cs" />
+    <Compile Include="CIT.Client\NCHITTEST.cs" />
+    <Compile Include="CIT.Client\Office2007BlackColorTable.cs" />
+    <Compile Include="CIT.Client\Office2007BlueColorTable.cs" />
+    <Compile Include="CIT.Client\Office2007Renderer.cs" />
+    <Compile Include="CIT.Client\Office2007SilverColorTable.cs" />
+    <Compile Include="CIT.Client\OfficeColorTable.cs" />
+    <Compile Include="CIT.Client\OpaqueCommand.cs" />
+    <Compile Include="CIT.Client\PAINTSTRUCT.cs" />
+    <Compile Include="CIT.Client\PanelColors.cs" />
+    <Compile Include="CIT.Client\PanelColorsBlack.cs" />
+    <Compile Include="CIT.Client\PanelColorsBlue.cs" />
+    <Compile Include="CIT.Client\PanelColorsBse.cs" />
+    <Compile Include="CIT.Client\PanelColorsOffice.cs" />
+    <Compile Include="CIT.Client\PanelColorsOffice2007Black.cs" />
+    <Compile Include="CIT.Client\PanelColorsOffice2007Blue.cs" />
+    <Compile Include="CIT.Client\PanelColorsOffice2007Silver.cs" />
+    <Compile Include="CIT.Client\PanelDesigner.cs" />
+    <Compile Include="CIT.Client\PanelDesignerActionList.cs" />
+    <Compile Include="CIT.Client\PanelSettingsManager.cs" />
+    <Compile Include="CIT.Client\PanelStyle.cs" />
+    <Compile Include="CIT.Client\PanelStyleChangeEventArgs.cs" />
+    <Compile Include="CIT.Client\POINTAPI.cs" />
+    <Compile Include="CIT.Client\PopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\ProfessionalColorTable.cs" />
+    <Compile Include="CIT.Client\RECT.cs" />
+    <Compile Include="CIT.Client\RoundRectangle.cs" />
+    <Compile Include="CIT.Client\SelectedTreeListViewItemCollection.cs" />
+    <Compile Include="CIT.Client\SkinManager.cs" />
+    <Compile Include="CIT.Client\SkinTheme.cs" />
+    <Compile Include="CIT.Client\SkinThemeAppleGray.cs" />
+    <Compile Include="CIT.Client\SkinThemeBlueSea.cs" />
+    <Compile Include="CIT.Client\SkinThemeDefault.cs" />
+    <Compile Include="CIT.Client\SkinThemeKissOfAngel.cs" />
+    <Compile Include="CIT.Client\SkinThemeNoFlower.cs" />
+    <Compile Include="CIT.Client\SkinThemeSunsetRed.cs" />
+    <Compile Include="CIT.Client\SystemCommands.cs" />
+    <Compile Include="CIT.Client\ThumbnailView.cs" />
+    <Compile Include="CIT.Client\TreeComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TreeListViewAction.cs" />
+    <Compile Include="CIT.Client\TreeListViewBeforeLabelEditEventArgs.cs" />
+    <Compile Include="CIT.Client\TreeListViewBeforeLabelEditEventHandler.cs" />
+    <Compile Include="CIT.Client\TreeListViewCancelEventArgs.cs" />
+    <Compile Include="CIT.Client\TreeListViewCancelEventHandler.cs" />
+    <Compile Include="CIT.Client\TreeListViewEventArgs.cs" />
+    <Compile Include="CIT.Client\TreeListViewEventHandler.cs" />
+    <Compile Include="CIT.Client\TreeListViewExpandMethod.cs" />
+    <Compile Include="CIT.Client\TreeListViewItem.cs" />
+    <Compile Include="CIT.Client\TreeListViewItemBoundsPortion.cs" />
+    <Compile Include="CIT.Client\TreeListViewItemCheckedHandler.cs" />
+    <Compile Include="CIT.Client\TreeListViewItemCollection.cs" />
+    <Compile Include="CIT.Client\TreeListViewItemEditControlHandle.cs" />
+    <Compile Include="CIT.Client\TreeListViewItemHandler.cs" />
+    <Compile Include="CIT.Client\TreeListViewLabelEditEventArgs.cs" />
+    <Compile Include="CIT.Client\TreeListViewLabelEditEventHandler.cs" />
+    <Compile Include="CIT.Client\TXButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXPanelFrame.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXPopupComboBox.cs" />
+    <Compile Include="CIT.Client\TXRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXStatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\TXToolStripRenderer.cs" />
+    <Compile Include="CIT.Client\TXTreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\ucButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\ucTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\UpDownButtonPaintEventArgs.cs" />
+    <Compile Include="CIT.Client\UpDownButtonPaintEventHandler.cs" />
+    <Compile Include="CIT.Client\UseAntiAlias.cs" />
+    <Compile Include="CIT.Client\UseClearTypeGridFit.cs" />
+    <Compile Include="CIT.Client\Win32.cs" />
+    <Compile Include="CIT.Client\WindowMessages.cs" />
+    <Compile Include="CIT.Client\WINDOWPOS.cs" />
+    <Compile Include="CIT.Client\WindowStyle.cs" />
+    <Compile Include="CIT.Client\WindowStyleEx.cs" />
+    <Compile Include="CIT.Client\XPanderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\XPanderPanelCaptionClickBehavior.cs" />
+    <Compile Include="CIT.Client\XPanderPanelCaptionGlyph.cs" />
+    <Compile Include="CIT.Client\XPanderPanelCollection.cs" />
+    <Compile Include="CIT.Client\XPanderPanelCollectionEditor.cs" />
+    <Compile Include="CIT.Client\XPanderPanelDesigner.cs" />
+    <Compile Include="CIT.Client\XPanderPanelList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIT.Client\XPanderPanelListDesigner.cs" />
+    <Compile Include="CIT.Client\XPanderPanelListDesignerActionList.cs" />
+    <Compile Include="CIT.Client\XPanderStateChangeEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="CIT.Client.Docking\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIT.Client.Docking\Strings.resx">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIT.Client.Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIT.Client.ToolScript\ucBase.resx">
+      <DependentUpon>ucBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIT.Client\TXTreeListView.resx">
+      <DependentUpon>TXTreeListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIT.Client\XPanderPanel.resx">
+      <DependentUpon>XPanderPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIT.Client\XPanderPanelList.resx">
+      <DependentUpon>XPanderPanelList.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

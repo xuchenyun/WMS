@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2379B437-ECBE-4D98-857E-2AF6123BBEE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseData</RootNamespace>
+    <AssemblyName>BaseData</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\CIT.MES\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CIT.Client">
+      <HintPath>..\CIT.MES\bin\Debug\CIT.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="CIT.Global">
+      <HintPath>..\CIT.MES\bin\Debug\CIT.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="CIT.Interface">
+      <HintPath>..\CIT.MES\bin\Debug\CIT.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="CIT.Wcf.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\CIT.Wcf.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport, Version=1.3.63.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Dock, Version=1.0.203.0, Culture=neutral, PublicKeyToken=1d6e1440378da53a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\FastReport.Dock.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=1.3.63.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Lassalle.Flow, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\Lassalle.Flow.DLL</HintPath>
+    </Reference>
+    <Reference Include="Lassalle.Flow.Router, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\Lassalle.Flow.Router.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CIT.MES\bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Bllb_ProductPrintInfo_tbpp.cs" />
+    <Compile Include="BLL\Bll_Bllb_BaseBom_tbbb.cs" />
+    <Compile Include="BLL\BLL_Bllb_ConMaterial_tbcm.cs" />
+    <Compile Include="BLL\BLL_Bllb_ContainerInfo_tbci.cs" />
+    <Compile Include="BLL\Bll_Bllb_ProductCode_tbpc.cs" />
+    <Compile Include="BLL\Bll_Bllb_ProductInfo_tbpi.cs" />
+    <Compile Include="BLL\Bll_Bllb_StockInfo_tbsi.cs" />
+    <Compile Include="BLL\Bll_MdcDatSuppliesManage.cs" />
+    <Compile Include="BLL\BLL_MdcDatUPH.cs" />
+    <Compile Include="BLL\BLL_SysdatMenu.cs" />
+    <Compile Include="BLL\Bll_SysdatMPNCustomer.cs" />
+    <Compile Include="BLL\BLL_SysdatOrg.cs" />
+    <Compile Include="BLL\BLL_SysDatUser.cs" />
+    <Compile Include="BLL\BLL_SysDatUserMenuMap.cs" />
+    <Compile Include="BLL\BLL_T_Bllb_MaterialContainer_tbmc.cs" />
+    <Compile Include="BLL\BLL_T_Bllb_MaterialQuality_tbmq.cs" />
+    <Compile Include="BLL\BLL_Bllb_MaterialRelation_Tbmr.cs" />
+    <Compile Include="BLL\BLL_T_Bllb_Step_tbs.cs" />
+    <Compile Include="BLL\Bll_Work_Number.cs" />
+    <Compile Include="BLL\BLL_Bllb_LabelSource_tbls.cs" />
+    <Compile Include="BLL\MdcdatProductDetail_BLL.cs" />
+    <Compile Include="BLL\MdcDatProductLine_BLL.cs" />
+    <Compile Include="BLL\MdcdatProduct_BLL.cs" />
+    <Compile Include="BLL\T_Sysc_dictionaryType_tsdt_BLL.cs" />
+    <Compile Include="BLL\T_Sysc_dictionary_tsd_BLL.cs" />
+    <Compile Include="DAL\DAL_NPOI.cs" />
+    <Compile Include="DAL\MdcdatMaterial_DAL.cs" />
+    <Compile Include="DAL\T_Bllb_MaterialReplace_tbmr_DAL.cs" />
+    <Compile Include="DAL\T_Bllb_SecondClass_tbsc_DAL.cs" />
+    <Compile Include="DAL\T_Bllb_StorageDocDetail_tbsdd_DAL.cs" />
+    <Compile Include="DAL\T_Sysc_dictionaryType_tsdt_DAL.cs" />
+    <Compile Include="DAL\T_Sysc_dictionary_tsd_DAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormCustomerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormCustomerEdit.Designer.cs">
+      <DependentUpon>FormCustomerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMaterialManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMaterialManager.Designer.cs">
+      <DependentUpon>FormMaterialManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_MaterialRelManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_MaterialRelManage.Designer.cs">
+      <DependentUpon>Form_MaterialRelManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmOrganize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmOrganize.Designer.cs">
+      <DependentUpon>FrmOrganize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormSuppliesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormSuppliesEdit.Designer.cs">
+      <DependentUpon>FormSuppliesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmSecondClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmSecondClass.Designer.cs">
+      <DependentUpon>FrmSecondClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmUserEdit.Designer.cs">
+      <DependentUpon>FrmUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucBarCodeQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucBarCodeQuery.Designer.cs">
+      <DependentUpon>ucBarCodeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucCustomerManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucCustomerManage.Designer.cs">
+      <DependentUpon>ucCustomerManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucMaterialQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\.Designer.cs">
+      <DependentUpon>ucMaterialQuery.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucMaterialRelation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucMaterialRelation.Designer.cs">
+      <DependentUpon>ucMaterialRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucSuppliesManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucSuppliesManage.Designer.cs">
+      <DependentUpon>ucSuppliesManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucUserManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucUserManage.Designer.cs">
+      <DependentUpon>ucUserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucOrgUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucOrgUser.Designer.cs">
+      <DependentUpon>ucOrgUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_ResetPwd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_ResetPwd.Designer.cs">
+      <DependentUpon>uc_ResetPwd.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormCustomerEdit.resx">
+      <DependentUpon>FormCustomerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMaterialManager.resx">
+      <DependentUpon>FormMaterialManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_MaterialRelManage.resx">
+      <DependentUpon>Form_MaterialRelManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmOrganize.resx">
+      <DependentUpon>FrmOrganize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormSuppliesEdit.resx">
+      <DependentUpon>FormSuppliesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmSecondClass.resx">
+      <DependentUpon>FrmSecondClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmUserEdit.resx">
+      <DependentUpon>FrmUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucBarCodeQuery.resx">
+      <DependentUpon>ucBarCodeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucCustomerManage.resx">
+      <DependentUpon>ucCustomerManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucMaterialQuery.resx">
+      <DependentUpon>ucMaterialQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucMaterialRelation.resx">
+      <DependentUpon>ucMaterialRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucSuppliesManage.resx">
+      <DependentUpon>ucSuppliesManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucUserManage.resx">
+      <DependentUpon>ucUserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucOrgUser.resx">
+      <DependentUpon>ucOrgUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_ResetPwd.resx">
+      <DependentUpon>uc_ResetPwd.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addnpm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aync_wo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodeNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearMate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delbinding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discarde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faliao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstMate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forceJIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halfpackage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventoryout.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\issue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\issue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jit-mate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer_to_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer_to_front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lineMove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-0649.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-1242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polygon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reelout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repairMate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reparie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reparing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\routebinding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rukudan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showgrid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabledefind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weiwai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wochange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CIT.MES\CIT.MES.csproj">
+      <Project>{cf585bde-21f8-484b-bec0-5f44a30d1956}</Project>
+      <Name>CIT.MES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{152d2fc9-efe5-48a4-b5b6-571ac00d9141}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{f2ebc176-e8c1-4dd7-b1cd-81971a25c196}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

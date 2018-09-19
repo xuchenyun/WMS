@@ -1,0 +1,24 @@
+using System;
+
+namespace CIT.Client.Docking.Win32
+{
+	[Flags]
+	internal enum FlagsSetWindowPos : uint
+	{
+		SWP_NOSIZE = 0x1,
+		SWP_NOMOVE = 0x2,
+		SWP_NOZORDER = 0x4,
+		SWP_NOREDRAW = 0x8,
+		SWP_NOACTIVATE = 0x10,
+		SWP_FRAMECHANGED = 0x20,
+		SWP_SHOWWINDOW = 0x40,
+		SWP_HIDEWINDOW = 0x80,
+		SWP_NOCOPYBITS = 0x100,
+		SWP_NOOWNERZORDER = 0x200,
+		SWP_NOSENDCHANGING = 0x400,
+		SWP_DRAWFRAME = 0x20,
+		SWP_NOREPOSITION = 0x200,
+		SWP_DEFERERASE = 0x2000,
+		SWP_ASYNCWINDOWPOS = 0x4000
+	}
+}

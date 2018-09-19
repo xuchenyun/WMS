@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD4850BA-0A33-4214-8985-A37EAC0E147A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CIT.Wcf.Utils</RootNamespace>
+    <AssemblyName>CIT.Wcf.Utils</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CIT.BLL">
+      <HintPath>..\..\DLL\CIT.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CIT.Wcf.Utils\DBHelper.cs" />
+    <Compile Include="CIT.Wcf.Utils\DBUtils.cs" />
+    <Compile Include="CIT.Wcf.Utils\Encry.cs" />
+    <Compile Include="CIT.Wcf.Utils\FileUtils.cs" />
+    <Compile Include="CIT.Wcf.Utils\Lincese.cs" />
+    <Compile Include="CIT.Wcf.Utils\NMS.cs" />
+    <Compile Include="CIT.Wcf.Utils\Utils.cs" />
+    <Compile Include="Common\Encry.cs" />
+    <Compile Include="Common\LicObj.cs" />
+    <Compile Include="Common\licType.cs" />
+    <Compile Include="Common\useType.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CIT.Global\CIT.Global.csproj">
+      <Project>{47aaab2d-437f-4fda-ae1e-b6ed10df48a6}</Project>
+      <Name>CIT.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIT.Interface\CIT.Interface.csproj">
+      <Project>{6e34208e-1503-4b1e-a132-0b48834723f0}</Project>
+      <Name>CIT.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIT.Utils\CIT.Utils.csproj">
+      <Project>{a637bc26-c0a4-4c23-ade2-955e5aada776}</Project>
+      <Name>CIT.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

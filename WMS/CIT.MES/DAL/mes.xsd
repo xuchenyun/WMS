@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="mes" targetNamespace="http://tempuri.org/mes.xsd" xmlns:mstns="http://tempuri.org/mes.xsd" xmlns="http://tempuri.org/mes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MES40ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MES40ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CIT.MES.Properties.Settings.GlobalReference.Default.MES40ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_sfcdatmateBackTableAdapter" GeneratorDataComponentClassName="View_sfcdatmateBackTableAdapter" Name="View_sfcdatmateBack" UserDataComponentName="View_sfcdatmateBackTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MES40ConnectionString (Settings)" DbObjectName="MES40.dbo.View_sfcdatmateBack" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT pn, qty FROM View_sfcdatmateBack</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="pn" DataSetColumn="pn" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="mes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="mes" msprop:Generator_UserDSName="mes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_sfcdatmateBack" msprop:Generator_TableClassName="View_sfcdatmateBackDataTable" msprop:Generator_TableVarName="tableView_sfcdatmateBack" msprop:Generator_TablePropName="View_sfcdatmateBack" msprop:Generator_RowDeletingName="View_sfcdatmateBackRowDeleting" msprop:Generator_RowChangingName="View_sfcdatmateBackRowChanging" msprop:Generator_RowEvHandlerName="View_sfcdatmateBackRowChangeEventHandler" msprop:Generator_RowDeletedName="View_sfcdatmateBackRowDeleted" msprop:Generator_UserTableName="View_sfcdatmateBack" msprop:Generator_RowChangedName="View_sfcdatmateBackRowChanged" msprop:Generator_RowEvArgName="View_sfcdatmateBackRowChangeEvent" msprop:Generator_RowClassName="View_sfcdatmateBackRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pn" msprop:Generator_ColumnVarNameInTable="columnpn" msprop:Generator_ColumnPropNameInRow="pn" msprop:Generator_ColumnPropNameInTable="pnColumn" msprop:Generator_UserColumnName="pn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PartCode1" msprop:Generator_ColumnVarNameInTable="columnPartCode1" msprop:Generator_ColumnPropNameInRow="PartCode1" msprop:Generator_ColumnPropNameInTable="PartCode1Column" msprop:Generator_UserColumnName="PartCode1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

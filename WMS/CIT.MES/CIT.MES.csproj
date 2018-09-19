@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF585BDE-21F8-484B-BEC0-5F44A30D1956}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CIT.MES</RootNamespace>
+    <AssemblyName>CIT.MES</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\20161217034539404_easyicon_net_32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.2.1.0, Culture=neutral, PublicKeyToken=304f5aa34aff2288, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSCommLib">
+      <HintPath>C:\CITDLL\AxInterop.MSCommLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CIT.Client">
+      <HintPath>C:\citdll\CIT.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>C:\citdll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="FileUpdate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FileUpdate\FileUpdate\bin\Debug\FileUpdate.exe</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Maticsoft.DBUtility">
+      <HintPath>C:\citdll\Maticsoft.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Maticsoft.DBUtility.Fakes">
+      <HintPath>E:\项目\柏瑞安\CIT.MES\bin\Debug\Maticsoft.DBUtility.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <HintPath>E:\项目\柏瑞安\CIT.MES\bin\Debug\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>E:\项目\柏瑞安\CIT.MES\bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.Vbe.Interop\15.0.0.0__71e9bce111e9429c\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\CITDLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TX.Framework">
+      <HintPath>..\DLL\TX.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.15.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>BarCode\Barcodes\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarcodeUtils.cs" />
+    <Compile Include="BarCode\BarcodeFactory.cs" />
+    <Compile Include="BarCode\Barcodes\Code39.cs" />
+    <Compile Include="BarCode\Barcodes\Code93.cs" />
+    <Compile Include="BarCode\Barcodes\QRcode.cs" />
+    <Compile Include="BarCode\Barcodes\DataMatrix.cs" />
+    <Compile Include="BarCode\Barcodes\Code128A.cs" />
+    <Compile Include="BarCode\CommonSettings.cs" />
+    <Compile Include="BarCode\Control\DocumentSpace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarCode\Control\DocumentSpace.Designer.cs">
+      <DependentUpon>DocumentSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\Control\DrawToolBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BarCode\Control\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\Control\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\Control\FrmSelTemplet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\Control\FrmSelTemplet.Designer.cs">
+      <DependentUpon>FrmSelTemplet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\Control\FrmSetName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\Control\FrmSetName.Designer.cs">
+      <DependentUpon>FrmSetName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\Control\frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\Control\frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\Control\ItemList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BarCode\Control\Ruler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BarCode\Control\Ruler.Designer.cs">
+      <DependentUpon>Ruler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarCode\DrawBarcodes.cs" />
+    <Compile Include="BarCode\DrawItem\DrawEllipse.cs" />
+    <Compile Include="BarCode\DrawItem\DrawImage.cs" />
+    <Compile Include="BarCode\DrawItem\DrawItemBase.cs" />
+    <Compile Include="BarCode\DrawItem\DrawItemList.cs" />
+    <Compile Include="BarCode\DrawItem\DrawLine.cs" />
+    <Compile Include="BarCode\DrawItem\DrawPolygon.cs" />
+    <Compile Include="BarCode\DrawItem\DrawRectangle.cs" />
+    <Compile Include="BarCode\DrawItem\DrawText.cs" />
+    <Compile Include="BarCode\enum.cs" />
+    <Compile Include="BarCode\frmNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\frmNotice.designer.cs">
+      <DependentUpon>frmNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\IBarcodes.cs" />
+    <Compile Include="BarCode\IO\InOutPut.cs" />
+    <Compile Include="BarCode\IO\ObjectSerializer.cs" />
+    <Compile Include="BarCode\IO\PrintConfig.cs" />
+    <Compile Include="BarCode\ToolBox\ToolAttribute.cs" />
+    <Compile Include="BarCode\ToolBox\ToolBarcode.cs" />
+    <Compile Include="BarCode\ToolBox\ToolBase.cs" />
+    <Compile Include="BarCode\ToolBox\ToolEllipse.cs" />
+    <Compile Include="BarCode\ToolBox\ToolImage.cs" />
+    <Compile Include="BarCode\ToolBox\ToolLine.cs" />
+    <Compile Include="BarCode\ToolBox\ToolPloygon.cs" />
+    <Compile Include="BarCode\ToolBox\ToolRectangle.cs" />
+    <Compile Include="BarCode\ToolBox\ToolSelector.cs" />
+    <Compile Include="BarCode\ToolBox\ToolText.cs" />
+    <Compile Include="BarCode\ucBarcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarCode\ucBarcode.Designer.cs">
+      <DependentUpon>ucBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\VistaRenderer\GraphicsTools.cs" />
+    <Compile Include="BarCode\VistaRenderer\VistaRenderer.cs" />
+    <Compile Include="BarCode\VistaRenderer\WindowsVistaColorTable.cs" />
+    <Compile Include="BarObject.cs" />
+    <Compile Include="BaseControl\FrmSetColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseControl\FrmSetColumns.Designer.cs">
+      <DependentUpon>FrmSetColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AddCheckBoxToDataGridView.cs" />
+    <Compile Include="Common\Helper\AnalysisBarCodeHelper.cs" />
+    <Compile Include="Common\Helper\PageHelper.cs" />
+    <Compile Include="Common\Helper\StringChange.cs" />
+    <Compile Include="Core\ExcelUtils.cs" />
+    <Compile Include="Core\TCPUtils.cs" />
+    <Compile Include="DAL\CIT.DAL.SfcDatProductProRouteLog.cs" />
+    <Compile Include="DAL\DAL_NPOI.cs" />
+    <Compile Include="DAL\Login_DAL.cs" />
+    <Compile Include="DAL\mes.cs">
+      <DependentUpon>mes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\mes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginException.Designer.cs">
+      <DependentUpon>FrmLoginException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNote.Designer.cs">
+      <DependentUpon>FrmNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LGSUtils.cs" />
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CIT.Model.SfcDatProductProRouteLog.cs" />
+    <Compile Include="Module1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUtils.cs" />
+    <Compile Include="RowMergeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RowMergeView.designer.cs" />
+    <Compile Include="RowMergeView1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RowMergeView.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\Common.cs" />
+    <Compile Include="Setting\FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\PrintUtils.cs" />
+    <Compile Include="Setting\PrintView\FrmBackReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\PrintView\FrmBackReport.Designer.cs">
+      <DependentUpon>FrmBackReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\PrintView\FrmLineOutReel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\PrintView\FrmLineOutReel.Designer.cs">
+      <DependentUpon>FrmLineOutReel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\SysSetting.cs" />
+    <Compile Include="Setting\ucPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Setting\ucPrint.Designer.cs">
+      <DependentUpon>ucPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="syncERP.cs" />
+    <Compile Include="ucHead.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHead.Designer.cs">
+      <DependentUpon>ucHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPageControl.Designer.cs">
+      <DependentUpon>ucPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="WMS\FrmMetaBindingEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WMS\FrmMetaBindingEdit.Designer.cs">
+      <DependentUpon>FrmMetaBindingEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WMS\ImportExcel.cs" />
+    <Compile Include="WMS\ucMateBinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WMS\ucMateBinding.Designer.cs">
+      <DependentUpon>ucMateBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmlUtils.cs" />
+    <Compile Include="yifei.cs" />
+    <EmbeddedResource Include="BarCode\Control\DocumentSpace.resx">
+      <DependentUpon>DocumentSpace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\Control\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\Control\FrmSelTemplet.resx">
+      <DependentUpon>FrmSelTemplet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\Control\FrmSetName.resx">
+      <DependentUpon>FrmSetName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\Control\frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\Designer.resx">
+      <DependentUpon>Designer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\frmNotice.resx">
+      <DependentUpon>frmNotice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\ucBarcode.resx">
+      <DependentUpon>ucBarcode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControl\FrmSetColumns.resx">
+      <DependentUpon>FrmSetColumns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\PrintView\backreport.rdlc" />
+    <EmbeddedResource Include="FrmLoginException.resx">
+      <DependentUpon>FrmLoginException.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNote.resx">
+      <DependentUpon>FrmNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RowMergeView.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RowMergeView1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\PrintView\FrmBackReport.resx">
+      <DependentUpon>FrmBackReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\PrintView\FrmLineOutReel.resx">
+      <DependentUpon>FrmLineOutReel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ucPrint.resx">
+      <DependentUpon>ucPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHead.resx">
+      <DependentUpon>ucHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WMS\FrmMetaBindingEdit.resx">
+      <DependentUpon>FrmMetaBindingEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WMS\ucMateBinding.resx">
+      <DependentUpon>ucMateBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarCode\Control\vssver2.scc" />
+    <None Include="BarCode\DrawItem\vssver2.scc" />
+    <None Include="BarCode\IO\vssver2.scc" />
+    <None Include="BarCode\ToolBox\vssver2.scc" />
+    <None Include="BarCode\VistaRenderer\vssver2.scc" />
+    <None Include="DAL\mes.xsc">
+      <DependentUpon>mes.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\mes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\mes.xss">
+      <DependentUpon>mes.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabledefind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstMate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aync_wo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discarde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faliao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\routebinding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jit-mate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forceJIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reelout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wochange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reparing.png" />
+    <None Include="Resources\repard.png" />
+    <None Include="Resources\weiwai.png" />
+    <None Include="Resources\lineMove.png" />
+    <None Include="Resources\addnpm.png" />
+    <None Include="Resources\rukudan.png" />
+    <None Include="Resources\lock_off.png" />
+    <None Include="Resources\lock_on.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\clearMate.png" />
+    <None Include="Resources\package.png" />
+    <None Include="Resources\extend.png" />
+    <None Include="Resources\reparie.png" />
+    <None Include="Resources\repairMate.png" />
+    <None Include="Resources\delbinding.png" />
+    <Content Include="BarCode\Barcodes\zxing.dll" />
+    <None Include="Resources\1718388015.jpg" />
+    <Content Include="Resources\20161217034539404_easyicon_net_32.ico" />
+    <Content Include="Resources\20161217034636604_easyicon_net_48.ico" />
+    <Content Include="Resources\20161217034706181_easyicon_net_64.ico" />
+    <Content Include="Resources\20161217034917829_easyicon_net_16.ico" />
+    <None Include="Resources\halfpackage.png" />
+    <None Include="Resources\zero.png" />
+    <None Include="Resources\new16.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\layer_to_front.png" />
+    <None Include="Resources\layer_to_back.png" />
+    <None Include="Resources\showgrid.gif" />
+    <None Include="Resources\setting.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\barcode.png" />
+    <EmbeddedResource Include="Resources\barcodeNew.png" />
+    <EmbeddedResource Include="Resources\cursor.png" />
+    <EmbeddedResource Include="Resources\ellipse.png" />
+    <EmbeddedResource Include="Resources\image.gif" />
+    <EmbeddedResource Include="Resources\line.png" />
+    <EmbeddedResource Include="Resources\polygon.gif" />
+    <EmbeddedResource Include="Resources\rectangle.png" />
+    <EmbeddedResource Include="Resources\text.png" />
+    <EmbeddedResource Include="Resources\Import.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\refill.png" />
+    <None Include="Resources\issue.png" />
+    <None Include="Resources\inventoryout.PNG" />
+    <None Include="Resources\issue1.png" />
+    <None Include="Resources\png-1242.png" />
+    <None Include="Resources\png-0649.png" />
+    <None Include="Resources\afda.ico" />
+    <Content Include="SlotFileConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CIT\CIT.Global\CIT.Global.csproj">
+      <Project>{47aaab2d-437f-4fda-ae1e-b6ed10df48a6}</Project>
+      <Name>CIT.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIT\CIT.Interface\CIT.Interface.csproj">
+      <Project>{6e34208e-1503-4b1e-a132-0b48834723f0}</Project>
+      <Name>CIT.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIT\CIT.Utils\CIT.Utils.csproj">
+      <Project>{a637bc26-c0a4-4c23-ade2-955e5aada776}</Project>
+      <Name>CIT.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIT\CIT.Wcf.Utils\CIT.Wcf.Utils.csproj">
+      <Project>{fd4850ba-0a33-4214-8985-a37eac0e147a}</Project>
+      <Name>CIT.Wcf.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{e152a479-b66c-463c-a61c-af214eb14f71}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
