@@ -1,0 +1,13 @@
+D:\_Git\SAA\WMS\WMS\CIT.Global\bin\Debug\CIT.Global.dll
+D:\_Git\SAA\WMS\WMS\CIT.Global\bin\Debug\CIT.Global.pdb
+D:\_Git\SAA\WMS\WMS\CIT.Global\obj\Debug\CIT.Global.dll
+D:\_Git\SAA\WMS\WMS\CIT.Global\obj\Debug\CIT.Global.pdb
+D:\_Git\SAA\WMS\WMS\CIT\CIT.Global\bin\Debug\CIT.Global.dll
+D:\_Git\SAA\WMS\WMS\CIT\CIT.Global\bin\Debug\CIT.Global.pdb
+D:\_Git\SAA\WMS\WMS\CIT\CIT.Global\obj\Debug\CIT.Global.dll
+D:\_Git\SAA\WMS\WMS\CIT\CIT.Global\obj\Debug\CIT.Global.pdb
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Global\bin\Debug\CIT.Global.dll
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Global\bin\Debug\CIT.Global.pdb
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Global\obj\Debug\CIT.Global.dll
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Global\obj\Debug\CIT.Global.pdb
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Global\obj\Debug\CIT.Global.csprojResolveAssemblyReference.cache

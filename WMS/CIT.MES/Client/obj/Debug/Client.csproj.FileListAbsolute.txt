@@ -1,0 +1,13 @@
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\bin\Debug\Client.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\bin\Debug\Client.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\Client.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\Client.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\CIT.Client.TXTreeListView.resources
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\CIT.Client.XPanderPanel.resources
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\CIT.Client.XPanderPanelList.resources
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\CIT.Client.Docking.Resources.resources
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\CIT.Client.Docking.Strings.resources
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\CIT.Client.Properties.Resources.resources
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\CIT.Client.ToolScript.ucBase.resources
+D:\_Git\SAA\WMS\WMS\CIT.MES\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache

@@ -1,0 +1,11 @@
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\bin\Debug\CIT.Wcf.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\bin\Debug\CIT.Wcf.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\obj\Debug\CIT.Wcf.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\obj\Debug\CIT.Wcf.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\obj\Debug\CIT.Wcf.csprojResolveAssemblyReference.cache
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\bin\Debug\CIT.Global.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\bin\Debug\CIT.Interface.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\bin\Debug\CIT.Utils.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\bin\Debug\CIT.Global.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\bin\Debug\CIT.Interface.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Wcf\bin\Debug\CIT.Utils.pdb

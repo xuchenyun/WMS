@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<slot>
+  <element id="批量名">Lot</element>
+  <element id="机器文件名">MC File</element>
+  <element id="机器名">MC</element>
+  <element id="供料器准备">Feeder Setup</element>
+  <element id="贴装台">Table</element>
+  <element id="地址">Address</element>
+  <element id="部件名称">Parts Name</element>
+  <element id="芯片名称">Chip Name</element>
+  <element id="元件说明">Part Comment</element>
+  <element id="供料器名称">Feeder Name</element>
+  <element id="包装">Package</element>
+  <element id="使用数">Number of use</element>
+  <element id="贴装说明">Mount Comment</element>
+  <element id="托盘布置数据">TrayLayout data</element>
+  <element id="进给">Forward</element>
+  <element id="生产数据">MC File:</element>
+  <element id="产品">Lot:</element>
+  <element id="机器编号">MachineID</element>
+  <!--<element id="机器名">MachineName</element>-->
+  <element id="工作台">table</element>
+  <element id="插槽">address</element>
+  <element id="子插槽">L/R</element>
+  <element id="元件">Parts Name</element>
+  <element id="供应">Feeder Name</element>
+  <element id="贴装点">Number of use</element>
+</slot>

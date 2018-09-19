@@ -1,0 +1,8 @@
+D:\_Git\SAA\WMS\WMS\CIT.MES\NMS\obj\Debug\NMS.csprojResolveAssemblyReference.cache
+D:\_Git\SAA\WMS\WMS\CIT.MES\NMS\bin\Debug\CIT.BLL.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\NMS\bin\Debug\CIT.Interface.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\NMS\bin\Debug\CIT.Interface.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\NMS\bin\Debug\CIT.Wcf.Utils.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\NMS\bin\Debug\CIT.Wcf.Utils.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\NMS\obj\Debug\CIT.Wcf.Utils.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\NMS\obj\Debug\CIT.Wcf.Utils.pdb

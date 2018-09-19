@@ -1,0 +1,13 @@
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Interface\bin\Debug\CIT.Interface.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Interface\bin\Debug\CIT.Interface.pdb
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Interface\obj\Debug\CIT.Interface.dll
+D:\_Git\SAA\WMS\WMS\CIT.MES\CIT.Interface\obj\Debug\CIT.Interface.pdb
+D:\_Git\SAA\WMS\WMS\CIT\CIT.Interface\bin\Debug\CIT.Interface.dll
+D:\_Git\SAA\WMS\WMS\CIT\CIT.Interface\bin\Debug\CIT.Interface.pdb
+D:\_Git\SAA\WMS\WMS\CIT\CIT.Interface\obj\Debug\CIT.Interface.dll
+D:\_Git\SAA\WMS\WMS\CIT\CIT.Interface\obj\Debug\CIT.Interface.pdb
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Interface\bin\Debug\CIT.Interface.dll
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Interface\bin\Debug\CIT.Interface.pdb
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Interface\obj\Debug\CIT.Interface.dll
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Interface\obj\Debug\CIT.Interface.pdb
+D:\_Git\SAA\WMS\saaWMS\WMS\CIT\CIT.Interface\obj\Debug\CIT.Interface.csprojResolveAssemblyReference.cache
